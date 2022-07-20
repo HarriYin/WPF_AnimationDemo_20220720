@@ -1,0 +1,40 @@
+﻿<Window
+    x:Class="WPF_AnimationDemo.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WPF_AnimationDemo"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Button
+                x:Name="btnDispatcherTimer"
+                Width="100"
+                Height="30"
+                Click="btnDispatcherTimer_Click"
+                Content="定时器实现" />
+
+            <Button
+                x:Name="btnCompositionTarget"
+                Width="100"
+                Height="30"
+                Margin="0,10"
+                Click="btnCompositionTarget_Click"
+                Content="帧动画实现" />
+
+            <Button
+                x:Name="btnPropertyAnimation"
+                Width="100"
+                Height="30"
+                Click="btnPropertyAnimation_Click"
+                Content="属性动画" />
+        </StackPanel>
+
+
+    </Grid>
+</Window>
